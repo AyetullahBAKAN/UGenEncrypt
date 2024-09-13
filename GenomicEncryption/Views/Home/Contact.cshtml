@@ -1,0 +1,52 @@
+﻿@model GenomicEncryption.Models.Classes.Messages
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genomic Encryption - @ViewBag.Title</title>
+    @Styles.Render("~/CSS/contact2.css")
+
+
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+        <div class="containerr">
+            <div class="left-panel">
+                <img src="~/IMAGE/message.png">
+            </div>
+                <div class="right-panel">
+                    <h2>Bizimle İletişim Kur</h2>
+                    <form action="" method="post">
+                        <label for="name">Adınız:</label>
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @name = "name", @required = true })
+
+                        <label for="email">E-posta Adresiniz:</label>
+                        @Html.TextBoxFor(m => m.Eposta, new { @class = "form-control", @name = "email", @required = true })
+
+                        <label for="message">Mesajınız:</label>
+                        @Html.TextBoxFor(m => m.Text, new { @class = "form-control", @name = "message", @required = true })
+
+                        <button class="submit-button" type="submit"> Gönder</button>
+
+
+                    </form>
+                </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

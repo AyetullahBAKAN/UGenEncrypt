@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Team";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<style>
+    .team-member {
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    img {
+        max-width: 100px;
+        border-radius: 65%;
+        margin-right: 30px;
+    }
+
+    .member-info {
+        flex: 1;
+    }
+
+    a {
+        color: blue;
+    }
+</style>
+<body>
+    <section class="team-member">
+        <img src="~/IMAGE/ibrahim.jpg" alt="İbrahim Yegen">
+        <div class="member-info">
+            <h2>İbrahim Yegen</h2>
+            <p>Uludağ Üniversitesi Bilgisayar Mühendisliği</p>
+            <a href="https://www.linkedin.com/in/ibrahimyegen/" target="_blank">LinkedIn Profili</a>
+
+        </div>
+    </section>
+    <section class="team-member">
+        <img src="~/IMAGE/karahan.jpg" alt="Ekip Üyesi 2">
+        <div class="member-info">
+            <h2>Karahan Türker</h2>
+            <p>Uludağ Üniversitesi Bilgisayar Mühendisliği</p>
+            <a href="https://www.linkedin.com/in/karahanturkerr/" target="_blank">LinkedIn Profili</a>
+        </div>
+    </section>
+
+    <section class="team-member">
+        <img src="~/IMAGE/ayetullah.jpeg" alt="Ekip Üyesi 3">
+        <div class="member-info">
+            <h2>Ayetullah Bakan</h2>
+            <p>Uludağ Üniversitesi Bilgisayar Mühendisliği</p>
+            <a href="https://www.linkedin.com/in/ayetullah-bakan-5541a62a7/" target="_blank">LinkedIn Profili</a>
+        </div>
+    </section>
+
+    
+
+
+</body>
+</html>
